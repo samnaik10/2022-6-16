@@ -1,0 +1,25 @@
+---
+title: "6-16"
+author: "Samruddhi Naik"
+date: '2022-06-17'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(primer.data)
+library(tidyverse)
+```
+
+
+```{r, warning = FALSE}
+
+nhanes |>
+  select(height) |>
+  ggplot(mapping = aes(x = height)) +
+  geom_histogram(bins = 20) + 
+  labs(title = "")
+  
+```
+
+
