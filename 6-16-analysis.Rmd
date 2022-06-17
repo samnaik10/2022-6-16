@@ -17,8 +17,8 @@ library(tidyverse)
 nhanes |>
   select(height) |>
   ggplot(mapping = aes(x = height)) +
-  geom_histogram(bins = 20) + 
-  labs(title = "")
+  geom_histogram(bins = 20, color = "black", fill = "steelblue") + 
+  labs(title = "Heights in NHANES", x = "Height (cm)", y = "Count") 
   
 ```
 
